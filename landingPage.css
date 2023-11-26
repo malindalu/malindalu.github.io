@@ -1,3 +1,6 @@
+html{
+     scroll-behavior: smooth;
+}
 body {
      background-color: #FFFFFF;
      padding: 0px;
@@ -5,6 +8,20 @@ body {
      text-align: center;
      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+
+#background {
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     top: 0;
+     left: 0;
+     z-index: -2;
+ }
+
+
+
+
 .container{
      display: flex;
      flex-direction: column;
@@ -12,9 +29,12 @@ body {
 .navbar{
      display:flex;
      color: #f9faf8;
-     background-color: #c69f9f;
-     padding: 20px 0px 20px 100px;
+     background-color: #ab9a9a;
+     padding: 10px 20% 10px 80%;
      align-items: center;
+     position: fixed;
+     z-index: 1;
+
 }
 .header-link{
      display:flex;
@@ -24,7 +44,7 @@ body {
 .header-link a{
      text-decoration: none;
      color:white;
-     font-size: 18px;
+     font-size: 15px;
      padding:10px;
 }
 
@@ -32,8 +52,8 @@ body {
 
 .main{
      display: flex;
-     color:maroon;
-     background-color:#c69f9f;
+     color:rgb(56, 47, 47);
+     /* background-color:#c69f9f; */
      align-items: center;
      justify-content: center;
      padding: 280px;
@@ -51,7 +71,7 @@ h1{
      text-align: center;
      width: 110px;
      border:none;
-     background:lightblue;
+     background: #ab9a9a;
      padding: 5px;
      border-radius: 8px;
      color: #fff;
@@ -66,6 +86,30 @@ h1{
      padding:10px;
 }
 
+
+.button {
+     /* padding: 12px 16px; */
+     /* color: #b18cec; */
+     cursor: pointer;
+     text-decoration: none;
+     color:rgb(56, 47, 47);
+     /* border-radius: 10px; */
+     /* margin: 4px; */
+     transition: 0.3s;
+}
+.button:hover{
+     color:#9fc68d;
+}
+
+/* The basics*/
+.basics{
+     padding: 20px 20px 30px 26%;
+     text-align: left;
+     background-color: #e0e0d3;
+     margin: 10px 0px 50px 0px;
+}
+
+
 /* panel */
 
 .panel-content{
@@ -74,50 +118,73 @@ h1{
 .panel-content-info{
      display: flex;
      justify-content: right;
-     margin: 0px 0px 0px 0px;
+     margin: 0px 0px 50px 0px;
      flex-wrap: nowrap;
+     transform: translate(-3%, 0%);
 }
 .panel-content-info img{
      width: 100%;
      height: 20vw;
      object-fit:cover;
+
 }
-.filler{
-     background-color: #c69f9f;
-     display: flex;
-}
-.filler-box{
+/* .filler{ */
+     /* background-color: #c69f9f; */
+     /* display: flex; */
+/* } */
+
+/* .filler-box{
      background-color: white;
-     padding:10px 0px 0px 35px;
+     padding:20px 20px 10px 35px;
      width: 300px;
      height: 50px;
      font-size: 18px;
      text-align: left;
      font-style: oblique;
-}
+} */
 .side-text{
      font-size: 14px;
      /* padding:8vw; */
-     margin: 0px 7vw 0px 35px;
+     padding: 10px 7vw 100% 35px;
      width: auto;
      float: left;
      text-align: left;
+     background-color: white;
+     transform: translate(0%, -1%);
 }
 .panel-image{
      cursor: pointer;
      outline: none;
      border: none;
      padding: 0px;
-     background-color: white;
+     background-color: #ab9a9a;
      width: 100%;
      height: auto;
+     transition: 0.5s;
 }
 .panel-image:hover{
-    background-color: lightblue;
+    background-color: #9fc68d;
+}
+
+/* courses */
+.coursework{
+     text-align: left;
+     padding: 20px 20px 30px 26%;
+}
+
+/* footer*/
+
+.fa-linkedin {
+     background: black;
+     color: white;
+     border-radius: 5%;
+     padding:3px;
+     text-decoration: none;
+     transform: translate(-500%, 500%);
 }
 
 .footer{
-     background-color: #829689;
+     background-color: #ab9a9a;
      height: 200px;
 }
 
