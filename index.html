@@ -6,15 +6,11 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>My First Webpage</title>
+     <title>Malinda Lu</title>
 </head>
 <body>
-     <script src="landingPage.js"></script>
      <div class = "backgroundContainer">
           <img src="images/background.jpg" id="background">
-          <!-- <video id = "background" muted autoplay loop> 
-              <source src = "resources/touhouBackground.mp4" type = "video/mp4"></src>
-          </video> -->
       </div>
      <div class="container">
           <nav class="navbar">
@@ -41,47 +37,78 @@
           <h3>Get to know me a little</h3>
           <a href="#look" class="button">The basics</a>
           <p></p>
-          <a href="#basics" class="button">A couple things I enjoy</a>
-          <p>My coursework</p>
-          <p>My experiences</p>
+          <a href="#basics" class="button">My coursework</a>
+          <p></p>
+          <a href="#mit" class="button">Projects</a>
+          <p></p>
+          <a href="#more" class="button">And a little more</a>
      </div>
+     <h1 class="section-title">Hello</h1>
      <div class="basics" id="basics">
-          <h2>Hello</h2>
-          <p>My name is Malinda, and I'm currently a sophomore at Wellesley College. I am majoring in Computer Science and Mathematics. Thanks for stopping by and I hope you have fun exploring this website!</p>
+          <p>My name is Malinda, and I'm currently a sophomore at Wellesley College majoring in Computer Science and Mathematics. Thanks for stopping by and I hope you have fun exploring this website!</p>
      </div>
-   
+     <h1 class="section-title">My Education</h1>
+     <div class="basics", id="coursework">
+          <img src="images/wellesley_logo.png">
+          <h3>Wellesley College</h3>
+          <p class="edu-info">Aug 2022 - May 2026 (expected) | GPA: 4.0</p>
+          <button type="button" class="collapsible">Courses</button>
+          <div class="collapsible-content">
+               <div class="coursework">
+                    <li>CS230 - Data Structures</li>
+                    <li>CS240 - Foundations of Computer Systems</li>
+                    <li>MATH205 - Multivariable Calculus</li>
+                    <li>MATH206 - Linear Algebra</li>
+                    <li>STAT218 - Introductory Statistics and Data Analysis</li>
+                    <li>PHYS108 - Principles of Electricity and Magnetism</li>
+                    <h3></h3>
+                    <li>SOC150 - Individual and Society</li>
+                    <li>ECON201 - Intermediate Microeconomics</li>
+                    <li>PE142 - Pilates</li>
+               </div>
+          </div>
+          <p></p>
+          <img src="images/mit_logo.png">
+          <h3 id="mit">Massachusetts Institute of Technology (Cross-registered)</h3>
+          <p class="edu-info">Jan 2023 - present</p>
+          <button type="button" class="collapsible">Courses</button>
+          <div class="collapsible-content">
+               <div class="coursework">
+                    <li>6.1200 - Mathematics for Computer Science</li>
+                    <li>6.1210 - Introduction to Algorithms</li>
+               </div>
+          </div>
+     </div>
+     <h1 class="section-title">Projects</h1>
      <div class = "panel-content", id="hobbies">
-          <!-- <h2>What do I do</h2> -->
           <div class="panel-content-info">
                <button class="panel-image">
-                    <img src="images/ninipipi.jpg">
-                    <p>Nini and Pipi</p>
+                    <img src="images/eit.png">
+                    <h2 class="panel-title">EIT medical imaging device</h2>
+                    <p class="panel-text">As part of my research at the MIT CSAIL HCI Engineering group, I helped
+                         test and improve an imaging device based on electrical impedance tomography, which
+                         uses machine learning to reconstruct the internal structures of human body parts based on low-current impedance signals. 
+                    </p>
                </button>
                <button class="panel-image" >
-                    <img src="images/piano.jpg">
-                    <p>Piano</p>
+                    <img src="images/stock.png">
+                    <h2 class="panel-title">Stock Weight Optimizer</h2>
+                    <p class="panel-text">This Python efficient frontier model was used to find the optimal weight of given stocks 
+                         that would maximize the Sharpe ratio of the overall investment portfolio, calculated based on price history. It was created during my
+                         participation in the Wharton High School Investment Competition.
+                    </p>
                </button>
                <button class="panel-image">
-                    <img src="images/cat.JPG">
-                    <p>Cat</p>
+                    <img src="images/cred_lab.png">
+                    <h2 class="panel-title">Google Search Domains</h2>
+                    <p class="panel-text">At the Wellesley Cred Lab, I automated the data collection of 43,000+ domains that appeared in
+                         Google search results. I webscraped information on each domain from Wikidata, Wayback, and Whois to analyze what kind of 
+                         information is available and can be used for credibility signals.
+                    </p>
                </button>
-               <!-- <button class="panel-image">
-                    <img src="images/cake.JPG">
-                    <p>Cake</p>
-               </button> -->
           </div>
-          <!-- <div class="side-text"> 
-               <p>And some other things!!</p>
-               <p></p>
-               <p></p>
-               <p></p>
-               <p></p>
-          </div> -->
+          <h1 id="more">Something More</h1>
           <div class="panel-content-info">
-               <!-- <button class="panel-image">
-                    <img src="images/ninipipi.jpg">
-                    <p>Nini and Pipi</p>
-               </button> -->
                <button class="panel-image" >
                     <img src="images/piano.jpg">
                     <p>Piano</p>
@@ -97,25 +124,8 @@
                
           </div>
      </div>
-     <div class="coursework">
-          <h3>Some relevant courses I've taken:</h3>
-          <p>Wellesley:</p>
-          <li>CS230 - Data Structures</li>
-          <li>CS240 - Foundations of Computer Systems</li>
-          <li>MATH205 - Multivariable Calculus</li>
-          <li>MATH206 - Linear Algebra</li>
-          <li>STAT218 - Introductory Statistics and Data Analysis</li>
-          <li>PHYS108 - Principles of Electricity and Magnetism</li>
-          <p>MIT:</p>
-          <li>6.1200 - Mathematics for Computer Science</li>
-          <li>6.1210 - Introduction to Algorithms</li>
-          <h3>Other courses I've enjoyed:</h3>
-          <li>SOC150 - Individual and Society</li>
-          <li>ECON201 - Intermediate Microeconomics</li>
-          <li>PE142 - Pilates</li>
-
-     </div>
-     <a href="#" class="fa fa-linkedin"></a>
+     <a href="https://www.linkedin.com/in/malindalu" class="fa fa-linkedin"></a>
      <div class="footer"></div>
 </body>
+<script src="script.js"></script>
 </html>
