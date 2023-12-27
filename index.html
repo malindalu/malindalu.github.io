@@ -28,7 +28,10 @@
                <h1>Beep Beep Boop Boop</h1>
                <p>This is Malinda</p>
                <div class="lookButtonContainer">
-                    <a href="#look" id="look">Look</a>
+                    <a href="#look" id="look">peek</a>
+               </div>
+               <div class="me">
+                    <img src="images/me.jpeg">
                </div>
           </div>
      
@@ -39,27 +42,39 @@
           <p></p>
           <a href="#basics" class="button">My coursework</a>
           <p></p>
-          <a href="#mit" class="button">Projects</a>
+          <a href="#mit" class="button">Experiences</a>
+          <p></p>
+          <a href="#hithink" class="button">Projects</a>
           <p></p>
           <a href="#more" class="button">And a little more</a>
      </div>
      <h1 class="section-title">Hello</h1>
      <div class="basics" id="basics">
-          <p>My name is Malinda, and I'm currently a sophomore at Wellesley College majoring in Computer Science and Mathematics. Thanks for stopping by and I hope you have fun exploring this website!</p>
+          <p>My name is Malinda, and I'm currently a sophomore at Wellesley College majoring in Computer Science and Mathematics. 
+               Thanks for stopping by and I hope you have fun exploring this website!</p>
      </div>
      <h1 class="section-title">My Education</h1>
      <div class="basics", id="coursework">
-          <img src="images/wellesley_logo.png">
+          <img src="images/wellesley_logo.png" >
           <h3>Wellesley College</h3>
-          <p class="edu-info">Aug 2022 - May 2026 (expected) | GPA: 4.0</p>
+          <div class="edu-name"></div>
+          <p class="edu-info">Aug 2022 - May 2026 (expected)</p>
+          <p class="edu-info">GPA: 4.0</p>
           <button type="button" class="collapsible">Courses</button>
           <div class="collapsible-content">
                <div class="coursework">
-                    <li>CS230 - Data Structures</li>
-                    <li>CS240 - Foundations of Computer Systems</li>
+                    <li>CS230 - Data Structures 
+                         <div class="skill">Java</div>
+                    </li>
+                    <li>CS240 - Foundations of Computer Systems
+                         <div class="skill">C</div>
+                         <div class="skill">x86</div>
+                    </li>
                     <li>MATH205 - Multivariable Calculus</li>
                     <li>MATH206 - Linear Algebra</li>
-                    <li>STAT218 - Introductory Statistics and Data Analysis</li>
+                    <li>STAT218 - Introductory Statistics and Data Analysis
+                         <div class="skill">R</div>
+                    </li>
                     <li>PHYS108 - Principles of Electricity and Magnetism</li>
                     <h3></h3>
                     <li>SOC150 - Individual and Society</li>
@@ -68,8 +83,9 @@
                </div>
           </div>
           <p></p>
-          <img src="images/mit_logo.png">
-          <h3 id="mit">Massachusetts Institute of Technology (Cross-registered)</h3>
+          <img src="images/mit_logo.png" class="edu-name">
+          <h3 class="edu-name" id="mit">Massachusetts Institute of Technology (Cross-registered)</h3>
+          <div class="edu-name"></div>
           <p class="edu-info">Jan 2023 - present</p>
           <button type="button" class="collapsible">Courses</button>
           <div class="collapsible-content">
@@ -78,6 +94,24 @@
                     <li>6.1210 - Introduction to Algorithms</li>
                </div>
           </div>
+     </div>
+     <h1 class="section-title">Work Experience</h1>
+     <div class="basics", id="coursework">
+          <img src="images/altega.jpg">
+          <h3>Game Design Intern @ Altega Games</h3>
+          <div class="edu-name"></div>
+          <p class="edu-info">Jun 2023 - Jul 2023</p>
+          <div class="skill">C#</div>
+          <div class="skill">Unity</div>
+          <div class="skill">Figma</div>
+          <div class="edu-name"></div>
+          <p></p>
+          <img src="images/hithink.jpeg">
+          <h3 id="hithink">Java Developer Intern @ HiThink Information Network</h3>
+          <div class="edu-name"></div>
+          <p class="edu-info">Jun 2023 - Jul 2023</p>
+          <div class="skill">Java</div>
+          <div class="skill">SQL</div>
      </div>
      <h1 class="section-title">Projects</h1>
      <div class = "panel-content", id="hobbies">
@@ -89,6 +123,8 @@
                          test and improve an imaging device based on electrical impedance tomography, which
                          uses machine learning to reconstruct the internal structures of human body parts based on low-current impedance signals. 
                     </p>
+                    <div class="skill">Python</div>
+                    <p></p>
                </button>
                <button class="panel-image" >
                     <img src="images/stock.png">
@@ -97,6 +133,8 @@
                          that would maximize the Sharpe ratio of the overall investment portfolio, calculated based on price history. It was created during my
                          participation in the Wharton High School Investment Competition.
                     </p>
+                    <div class="skill">Python</div>
+                    <p></p>
                </button>
                <button class="panel-image">
                     <img src="images/cred_lab.png">
@@ -105,27 +143,25 @@
                          Google search results. I webscraped information on each domain from Wikidata, Wayback, and Whois to analyze what kind of 
                          information is available and can be used for credibility signals.
                     </p>
+                    <div class="skill">Python</div>
+                    <p></p>
                </button>
           </div>
-          <h1 id="more">Something More</h1>
-          <div class="panel-content-info">
-               <button class="panel-image" >
-                    <img src="images/piano.jpg">
-                    <p>Piano</p>
-               </button>
-               <button class="panel-image">
-                    <img src="images/cat.JPG">
-                    <p>Cat</p>
-               </button>
-               <button class="panel-image">
+          <div class="hobby-text" id="more">In my freetime, I enjoy baking, taking care of my cat, watching movies, 
+               and playing the piano.
+               <div class="hobby-panel">
                     <img src="images/cake.JPG">
-                    <p>Cake</p>
-               </button>
-               
+                    <img src="images/cat.JPG">
+                    <img src="images/piano.jpg">
+               </div>
           </div>
+       
      </div>
-     <a href="https://www.linkedin.com/in/malindalu" class="fa fa-linkedin"></a>
-     <div class="footer"></div>
+     <div class="footer">
+          <a href="https://www.linkedin.com/in/malindalu" class="fa fa-linkedin"></a>
+          <a href="https://github.com/malindalu" class="fa fa-github"></a>
+          <p>Created by Malinda Lu</p>
+     </div>
 </body>
 <script src="script.js"></script>
 </html>

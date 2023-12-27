@@ -85,35 +85,53 @@ h1{
      padding:10px;
 }
 
+.lookButtonContainer:hover + .me{
+     cursor: pointer;
+     display: block;
+}
+
+.me{
+     align-items: center;
+     display:none;
+     margin: 10px;
+}
+
+.me img{
+     width: 100px;
+     height: 100px;
+     object-fit: cover;
+     border-radius: 50%;
+}
 
 .button {
      cursor: pointer;
      text-decoration: none;
      color:rgb(56, 47, 47);
-     transition: 0.3s;
+     transition: 0.2s;
 }
 .button:hover{
      color:#9fc68d;
 }
 
 .section-title{
-     margin:10px;
-     translate: 10px;
+     margin:20px;
+     translate: 30px;
      text-align: left;
 }
 
 /* The basics*/
 .basics{
-     padding: 20px 50px 20px 26%;
+     padding: 30px 60px 30px 29%;
      text-align: left;
      background-color: #e0e0d3;
      margin: 10px 0px 50px 0px;
 }
 
 .basics img{
-     width: 8%;
+     width: 80px;
      height: 8%;
      float: left;
+     object-fit: cover;
 }
 
 .basics h3{
@@ -122,14 +140,21 @@ h1{
 }
 
 .edu-info{
-     margin-left: 100px;
      padding: 4px;
-     width:max-content;
+     margin-left: 20px;
      text-align: left;
+     width:max-content;
      background-color:#ab9a9a;
      border-radius: 2px;
      color:#f9faf8;
      font-size: small;
+     display:inline-block;
+     border-style: solid;
+     border-width: 1px;
+}
+.edu-name{
+     display:block;
+     width:max-content;
 }
 .collapsible {
      background-color:darkgray;
@@ -175,21 +200,34 @@ h1{
      
 }
 .panel-text{
-     margin:20px;
+     margin:30px;
      text-align: left;
      font-size:12pt;
 }
 .panel-title{
      text-align: left;
      font-size: 15pt;
-     margin: 20px;
+     margin: 30px;
+}
+.skill{
+     padding: 4px 10px 4px 10px;
+     /* margin-left: 20px; */
+     text-align: left;
+     font-size: 10pt;
+     width: min-content;
+     background-color: #9fc68d;
+     display:inline-block;
+     border-color: white;
+     border-style: solid;
+     border-width: 1px;
+     border-radius: 4px;
 }
 
 .side-text{
      font-size: 14px;
      position: sticky;
      top: 50px;
-     padding: 10px 7vw 800px 35px;
+     padding: 50px 6vw 800px 70px;
      margin-bottom: 200px;
      width: auto;
      float: left;
@@ -220,22 +258,58 @@ h1{
 .coursework{
      text-align: left;
      padding: 20px;
+     width: max-content;
      font-family: 'Courier New', Courier, monospace;
+}
+
+/* something more section*/
+.hobby-text{
+     background-color:#7e6d6d;
+     margin:40px 0px 50px 0px ;
+     padding: 50px 0px 30px 20%;
+     color:#e0e0d3;
+}
+.hobby-panel img{
+     width: 20vw;
+     height: 20vw;
+     object-fit: cover;
+     margin: 50px 20px 50px 10px;
+     /* border-style:dotted;
+     border-width: 1px; */
+     border-radius: 15px;
+     transition: .2s;
+}
+
+.hobby-panel img:hover{
+     transform: scale(1.2);
 }
 
 /* footer*/
 
 .fa-linkedin {
-     background: black;
+     /* background: black; */
      color: white;
      border-radius: 5%;
      padding:3px;
      text-decoration: none;
-     transform: translate(-500%, 500%);
+     /* transform: translate(0, 500%); */
+}
+
+.fa-github {
+     /* background: black; */
+     color: white;
+     border-radius: 5%;
+     padding:3px;
+     text-decoration: none;
+     /* transform: translate(0%, 500%); */
 }
 
 .footer{
-     background-color: #ab9a9a;
-     height: 200px;
+     background-color:#301b1b;
+     height: 100px;
+     padding-top: 100px;
+     color:white;
+     font-size: 10pt;
+
 }
 
