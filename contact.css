@@ -1,0 +1,77 @@
+html{
+     scroll-behavior: smooth;
+}
+body {
+     background-color: #FFFFFF;
+     padding: 0px;
+     margin: 0px;
+     text-align: center;
+     font-family: "Neue Haas Grotesk Display","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#background {
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     top: 0;
+     left: 0;
+     z-index: -2;
+ }
+
+
+.container{
+     display: flex;
+     flex-direction: column;
+}
+.navbar{
+     display:flex;
+     color: #f9faf8;
+     background-color: #ab9a9a;
+     padding: 10px 20% 10px 80%;
+     align-items: center;
+     position: fixed;
+     top:0;
+}
+.header-link{
+     display:flex;
+     margin-left: auto;
+     /* padding: 0px 100px 0px 0px; */
+}
+.header-link a{
+     text-decoration: none;
+     color:white;
+     font-size: 15px;
+     padding:10px;
+}
+
+.main{
+     text-align: left;
+     padding: 20%;
+     background-color: rgba(1, 1,1 , 0.5);
+     margin: 7% 25% 10% 25%;
+     border-radius: 50%;
+     color:#f9faf8;
+     transition: 0.2s;
+}
+
+.main:hover{
+     border-style: solid;
+}
+
+.fa-linkedin {
+     color: white;
+     border-radius: 5%;
+     padding:3px;
+     text-decoration: none;
+     transform: scale(1.5);
+}
+
+.fa-github {
+     color: white;
+     border-radius: 5%;
+     margin-left: 10px;
+     padding:3px;
+     text-decoration: none;
+     transform: scale(1.5);
+}
